@@ -1,14 +1,6 @@
-# sms
+# HMM
 
-
-## Running the application
-
-
-## Deploying to Production
-
-
-## Project structure
-
+## Requirements
 
 ## Useful links
 
