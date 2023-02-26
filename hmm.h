@@ -9,13 +9,6 @@
 #include <time.h>
 #include <stdbool.h>
 
-#define ABS(x) (((x)>0)?(x):-(x))
-#define MAX(a, b) (((a)>(b))?(a):(b))
-#define MIN(a, b) (((a)<(b))?(a):(b))
-
-/** 1MB for I/O buffer */
-#define MAX_IO_BUFFER_SIZE 1048576
-
 /**
   * Object model corresponding to a Hidden Markov Model (Hmm)
   */
