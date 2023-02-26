@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdbool.h>
-#include "hmm_mpi.h"
 
 #define ABS(x) (((x)>0)?(x):-(x))
 #define MAX(a, b) (((a)>(b))?(a):(b))
