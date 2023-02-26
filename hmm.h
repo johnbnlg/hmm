@@ -6,8 +6,6 @@
 #include <string.h>
 #include <float.h>
 #include <stdlib.h>
-#include <time.h>
-#include <stdbool.h>
 
 /**
   * Object model corresponding to a Hidden Markov Model (Hmm)
