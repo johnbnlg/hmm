@@ -147,8 +147,8 @@ Hmm hmmFromMarkovChainSet(MarkovChainsSet chainsSet, double hmmInitConstant) {
     /** Computing PI the numbers of states and symbols*/
     for (i = 0; i < chainsSet.count; ++i) {
         for (j = 0; j < chainsSet.chain[i].length; ++j) {
-            if (chainsSet.chain[i].state[j] > statesCount) statesCount = chainsSet.chain[i].state[j];
-            if (chainsSet.chain[i].observation[j] > symbolsCount) statesCount = chainsSet.chain[i].observation[j];
+            if (chainsSet.chain[i].state[j] > statesCount) statesCount = chainsSet.chain[i].state[j] + 1; // +1 because states are 0-indexed
+            if (chainsSet.chain[i].observation[j] > symbolsCount) symbolsCount = chainsSet.chain[i].observation[j] + 1;
         }
     }
     Hmm model = newHmm(statesCount, symbolsCount);
